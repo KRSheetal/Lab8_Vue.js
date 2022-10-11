@@ -1,0 +1,11 @@
+
+ Q2. Property ... was accessed during render but is not defined on instance.
+	What does this Vue warning message mean? 
+		This error means, the property {{total}} was accessed to perform an action, but there is no code written
+		to perform an action.
+	Can you safely ignore it? 
+		This cannot be ignored as a method must be defined for the property to perform the action.
+	What causes it, and 
+		This error occurs when a computed total() method is not defined for property {{total}}.
+	how do you fix it?
+		This can be fixed by adding "computed total()" method with required funcations under data(), in <script></script>
